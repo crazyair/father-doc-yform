@@ -1,3 +1,16 @@
-# yforms
+[![codecov](https://codecov.io/gh/crazyair/yforms/branch/master/graph/badge.svg)](https://codecov.io/gh/crazyair/yforms)
 
-See our [main repo](https://github.com/crazyair/yforms) for more information.
+## Usage & Guide
+
+To check out live examples and docs, visit [yforms now](https://yforms.now.sh/).
+
+## Development
+
+```bash
+$ npm install
+$ npm run dev
+```
+
+## LICENSE
+
+[MIT](https://github.com/umijs/umi/blob/master/LICENSE)
