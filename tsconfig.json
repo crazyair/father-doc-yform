@@ -20,6 +20,7 @@
     ".eslintrc.js",
     "jest.config.js",
     "setupTests.js",
+    "config/config.js",
     "packages/yforms/webpack.config.js"
   ]
 }

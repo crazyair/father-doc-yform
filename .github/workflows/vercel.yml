@@ -15,5 +15,6 @@ jobs:
           ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
         run: |
           yarn
+          yarn bootstrap
           yarn doc:build
           now --token=$ZEIT_TOKEN --prod --confirm --force

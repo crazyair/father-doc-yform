@@ -21,7 +21,7 @@ module.exports = {
               lessOptions: {
                 javascriptEnabled: true,
                 modifyVars: {
-                  //  '@ant-prefix': 'demo'
+                  // '@ant-prefix': 'demo',
                 },
               },
             },

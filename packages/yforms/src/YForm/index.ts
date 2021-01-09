@@ -3,7 +3,6 @@ import Items from './Items';
 import useSubmit from './useSubmit';
 import useForm from './useForm';
 
-import './index.less';
 import { YFormItemsContext, YFormContext, YFormListContent, YFormItemContext } from './Context';
 import FormModal from './FormModal';
 import Item from './Item';

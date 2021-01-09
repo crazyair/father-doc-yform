@@ -24,6 +24,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "useWorkspaces": true,
+  "useWorkspaces": false,
   "version": "independent"
 }
