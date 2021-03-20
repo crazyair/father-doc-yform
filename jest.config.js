@@ -5,7 +5,7 @@ module.exports = {
   setupFiles: ['./setupTests.js'],
   modulePathIgnorePatterns: ['/docs/', '/__snapshots__/', 'lib'],
   // coveragePathIgnorePatterns: ['/src/JackBox/'],
-  coveragePathIgnorePatterns: ['/__test__/', 'lib'],
-  // testPathIgnorePatterns: ['/packages/yforms'],
+  coveragePathIgnorePatterns: ['/__test__/', 'lib', '/packages/yforms'],
+  testPathIgnorePatterns: ['/packages/yforms'],
   // collectCoverage: true,
 };

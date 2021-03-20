@@ -4,9 +4,9 @@
     "moduleResolution": "node",
     "baseUrl": "./packages",
     "paths": {
-      "yforms": ["yforms/src"],
-      "yforms/lib/*": ["yforms/src/*"],
-      "yforms/es/*": ["yforms/src/*"]
+      "yforms-provider": ["yforms/src"],
+      "yforms-provider/lib/*": ["yforms/src/*"],
+      "yforms-provider/es/*": ["yforms/src/*"]
     },
     "jsx": "preserve",
     "declaration": true,
@@ -15,11 +15,15 @@
   },
   "exclude": ["tsconfig.json", "node_modules", "lib", "es", "src/**/__test__/*"],
   "include": [
+    "src/**/*",
     "packages/**/src",
+    "packages/**/tests",
     "docs/**/*",
     ".eslintrc.js",
     "jest.config.js",
     "setupTests.js",
-    "packages/yforms/webpack.config.js"
+    "config/config.js",
+    "packages/yforms/webpack.config.js",
+    "webpack.config.js"
   ]
 }

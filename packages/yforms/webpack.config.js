@@ -1,8 +1,9 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-  entry: './src/style/index.tsx',
+  entry: path.resolve(__dirname, 'src/style/index.tsx'),
   devtool: false,
   mode: 'production',
   output: {
@@ -21,7 +22,7 @@ module.exports = {
               lessOptions: {
                 javascriptEnabled: true,
                 modifyVars: {
-                  //  '@ant-prefix': 'demo'
+                  // '@ant-prefix': 'demo',
                 },
               },
             },

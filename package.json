@@ -9,17 +9,19 @@
   },
   "scripts": {
     "start": "dumi dev",
-    "build": "father-build && cd packages/yforms && yarn compile && cd ../..",
+    "bootstrap": "lerna bootstrap",
+    "build": "father-build",
     "doc:build": "dumi build",
     "now-build": "yarn && yarn doc:build",
     "fa:build": "father build",
-    "test": "umi-test -u --coverage",
+    "test": "umi-test -u --coverage --watchAll",
     "test:ci": "umi-test",
     "lint": "eslint --ext .js,jsx,ts,tsx packages/**/src --fix",
     "lint:es": "eslint --ext .js,jsx,ts,tsx packages/**/src",
     "lint:tsc": "tsc -p tsconfig.json --noEmit",
+    "compile": "webpack --progress --profile",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "pub": "npm run build && lerna publish"
+    "pub": "yarn build && lerna publish"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
@@ -37,6 +39,7 @@
     }
   },
   "devDependencies": {
+    "@ant-design/icons": "^4.4.0",
     "@babel/plugin-proposal-optional-chaining": "^7.12.7",
     "@babel/polyfill": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
@@ -56,6 +59,7 @@
     "@typescript-eslint/parser": "^4.12.0",
     "@umijs/fabric": "^2.4.11",
     "@umijs/test": "^3.3.1",
+    "antd": "^4.10.3",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-import": "^1.13.3",
@@ -63,7 +67,7 @@
     "conventional-changelog": "^3.1.24",
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
-    "dumi": "^1.1.0",
+    "dumi": "^1.1.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "7.15",
@@ -80,7 +84,7 @@
     "husky": "^4.3.5",
     "lerna": "^3.22.1",
     "lerna-changelog": "^1.0.1",
-    "less": "^3.12.2",
+    "less": "^3.9.0",
     "less-loader": "^7.2.1",
     "lint-staged": "^10.5.3",
     "mini-css-extract-plugin": "^1.3.3",
@@ -91,12 +95,13 @@
     "react-router-dom": "^5.2.0",
     "react-test-renderer": "^16.13.1",
     "typescript": "^4.1.2",
-    "webpack": "^5.11.1",
-    "webpack-cli": "^4.3.1"
+    "umi": "^3.3.7",
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "license": "MIT",
   "dependencies": {
-    "antd": "^4.9.2",
     "immutable": "^4.0.0-rc.12",
     "rc-queue-anim": "^1.8.5"
   }

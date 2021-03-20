@@ -1,8 +1,9 @@
 {
-  "name": "yforms",
-  "version": "1.4.1",
+  "name": "yforms-provider",
+  "version": "1.0.3",
   "description": "自定义表单组件",
   "main": "lib/index.js",
+  "module": "es/index.js",
   "typings": "lib/index.d.ts",
   "authors": {
     "name": "crazyair",
@@ -21,8 +22,7 @@
   ],
   "scripts": {
     "lint:tsc": "tsc -p tsconfig.json --noEmit",
-    "build": "father-build",
-    "compile": "webpack --progress --profile"
+    "build": "father-build"
   },
   "repository": {
     "type": "git",
@@ -36,18 +36,12 @@
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
-    "antd": "4.x",
-    "@ant-design/icons": "^4.x"
+    "@ant-design/icons": "^4.x",
+    "antd": "4.x"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5",
-    "ahooks": "^2.9.2",
-    "immutable": "^4.0.0-rc.12",
-    "lodash": "^4.17.20",
-    "moment": "^2.29.1",
-    "numbro": "^2.3.2",
-    "nzh": "^1.0.4",
-    "warning": "^4.0.3"
+    "@babel/runtime": "^7.12.5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {}
 }
