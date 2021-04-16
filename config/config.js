@@ -29,4 +29,5 @@ export default {
       },
     ],
   ],
+  plugins: [`${__dirname}/plugin/index.ts`],
 };
